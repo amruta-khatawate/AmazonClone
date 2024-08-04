@@ -2,17 +2,19 @@
       padding: 0;
       margin: 0;
       box-sizing: 0;
+      color: white;
 }
 
-.left-header{
-      display: flex;
-      justify-content: center;
-}
+
 nav{
       height: 60px;
+      display: flex;
 }
 
 nav img{
       height: 50px;
-      mix-blend-mode:lighten;
+}
+
+.deliver{
+      display: flex;
 }
