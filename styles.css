@@ -5,10 +5,11 @@
       color: white;
 }
 
-
 nav{
       height: 60px;
       display: flex;
+      justify-content: center;
+      vertical-align: middle  ;
 }
 
 nav img{
