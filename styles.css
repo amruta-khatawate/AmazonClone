@@ -7,10 +7,11 @@
 
 .nav{
       height: 60px;
+      width: 100%;
       background-color: rgb(15, 17, 17);
       color: white;
       display: flex;
-      /* justify-content: center; */
+      justify-content: center;
       align-items: center;
 }
 
@@ -21,7 +22,6 @@
 .box{
       height: 49px;
       cursor: pointer;
-      /* width: 100px; */
 }
 
 .img{
@@ -55,7 +55,7 @@
       display: flex;
       justify-content: space-evenly;
       height: 40px;
-      width: 890px;
+      width: 918px;
       border-radius: 3px;
 }
 
@@ -100,3 +100,63 @@
 
 
 
+/* navright boxs  */
+
+.nav-tools{
+      width: 383px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 0;
+      padding-top: 3px;
+      margin-top: 2px;
+}
+
+.country{
+      width: 85px;
+      height: 45px;
+      margin-left: 1px;
+}
+
+.flag-name{
+      width: 55px;
+      height: 33px;
+      display: flex;
+      justify-content: center;
+      align-items:end;
+      padding: 6px 9px 5px 9px;
+}
+
+.border h3{
+      font-size: 15px;
+}
+
+.signinn-details{
+      height: 40px;
+      width: 113px;
+      padding: 0 9px 7px 9px;
+      margin-left: 1px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+}
+
+.ord-details{
+      height: 40px;
+      width: 58px;
+      padding: 0 9px 10px 9px;
+      margin-left: 1px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+}
+
+.cart-details{
+      height: 39px;
+      width: 66px;
+      padding: 0 9px 10px 9px;
+      margin: 0 11px 0 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
