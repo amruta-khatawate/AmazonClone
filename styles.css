@@ -160,3 +160,12 @@
       justify-content: center;
       align-items: center;
 }
+
+.cart-image{
+      font-size: 19px;
+      position: relative;
+}
+.cart-quantity{
+      position: relative;
+      color: rgb(188, 127, 12);
+}
