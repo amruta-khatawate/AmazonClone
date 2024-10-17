@@ -1,21 +1,102 @@
 *{
       padding: 0;
       margin: 0;
-      box-sizing: 0;
-      color: white;
+      border: border-box;
 }
 
-nav{
+
+.nav{
       height: 60px;
+      background-color: rgb(15, 17, 17);
+      color: white;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+}
+
+.logo{
+      margin-left: 11px;
+}
+
+.box{
+      height: 49px;
+      cursor: pointer;
+      /* width: 100px; */
+}
+
+.img{
+      width: 100px;
+      height: 49px;
+}
+
+.border:hover{
+      border: 1px solid white;
+      border-radius: 2px;
+}
+
+
+/* box-2 */
+.locationDe{
+      height: 49px;
+      padding: 0 9px;
+}
+
+.india i{
+      font-size: 13px;
+      margin-right: 2px;
+      align-self: center;
+}
+
+/* serach box  */
+.seach-fill{
+      margin: 0 10px;
+}
+.search{
+      display: flex;
+      justify-content: space-evenly;
+      height: 40px;
+      width: 890px;
+      border-radius: 3px;
+}
+
+.search:hover{
+      box-shadow: -2px 2px 8px rgba(255, 166, 0, 0.852);
+}
+.select-icon{
+      padding-left: 5px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      background-color: #f3f3f3;
+      text-align: center;
+      border: none;
+}
+
+.inpt{
+      width: 100%;
+      border: none;
+      font-size: 18px;
+      padding-left: 8px;
+
+}
+
+.inpt:focus{
+      outline: none;
+}
+
+.serachIcon{
+      background-color: orange;
+      width: 40px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
       display: flex;
       justify-content: center;
-      vertical-align: middle  ;
+      align-items: center;
 }
 
-nav img{
-      height: 50px;
+
+.serachIcon i{
+      font-size: 22px;
 }
 
-.deliver{
-      display: flex;
-}
+
+
