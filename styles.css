@@ -1,13 +1,15 @@
 *{
       padding: 0;
       margin: 0;
-      border: border-box;
+      box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+      width: 100%;
 }
 
 
 .nav{
       height: 60px;
       width: 100%;
+      max-width: 100vw;
       background-color: rgb(15, 17, 17);
       color: white;
       display: flex;
@@ -17,16 +19,22 @@
 
 .logo{
       margin-left: 11px;
+      /* width: 100%; */
+      max-width: 113px;
+      height: auto;
 }
 
+.img{
+     height: 50px; 
+     min-width: 113px;
+}
 .box{
       height: 49px;
       cursor: pointer;
 }
 
-.img{
-      width: 100px;
-      height: 49px;
+.border{
+      border: 1px solid transparent;
 }
 
 .border:hover{
@@ -36,34 +44,56 @@
 
 
 /* box-2 */
+
+.location{
+      width: 100%;
+      max-width: 90px;
+}
 .locationDe{
       height: 49px;
       padding: 0 9px;
 }
 
+.locationDe p{
+      color: rgb(155, 151, 151); 
+      padding: 7px 0 0 13px;
+      font-size: 13px;
+      min-width: 4.3rem;
+}
+.india{
+      display: flex;
+}
+
 .india i{
       font-size: 13px;
       margin-right: 2px;
-      align-self: center;
+      max-width: 15px;
 }
+
 
 /* serach box  */
 .seach-fill{
       margin: 0 10px;
+      
 }
 .search{
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      align-content: center;
       height: 40px;
-      width: 918px;
+      width: 100%;
+      max-width: 983px;
       border-radius: 3px;
 }
 
 .search:hover{
       box-shadow: -2px 2px 8px rgba(255, 166, 0, 0.852);
 }
+
 .select-icon{
       padding-left: 5px;
+      width: 8%;
+      min-width: 40px;
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
       background-color: #f3f3f3;
@@ -73,8 +103,9 @@
 
 .inpt{
       width: 100%;
+      min-width: 40px;
       border: none;
-      font-size: 18px;
+      font-size: 15px;
       padding-left: 8px;
 
 }
@@ -85,37 +116,45 @@
 
 .serachIcon{
       background-color: orange;
-      width: 40px;
+      width: 5%;
+      min-width: 40px;
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       display: flex;
-      justify-content: center;
       align-items: center;
 }
 
 
-.serachIcon i{
-      font-size: 22px;
+.fa-magnifying-glass{
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+
 }
 
 
 
 /* navright boxs  */
+.nav-right{
+      width: 100%;
+      max-width: 383px;
+}
 
 .nav-tools{
-      width: 383px;
+      width: 100%;
       display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      gap: 0;
+      justify-content:stretch;
+      align-items: center; 
       padding-top: 3px;
       margin-top: 2px;
 }
 
 .country{
-      width: 85px;
-      height: 45px;
+      max-width: 85px;
+      height: 50px;
       margin-left: 1px;
+      padding: 0 9px 5px 9px ;
+      align-content: end;
 }
 
 .flag-name{
@@ -123,44 +162,73 @@
       height: 33px;
       display: flex;
       justify-content: center;
-      align-items:end;
-      padding: 6px 9px 5px 9px;
+      gap: 0.3rem;
 }
 
 .border h3{
       font-size: 15px;
 }
 
+/* right-nav 2nd box  */
+
+.account-signin{
+      max-width: 113px;
+      height: 50px;
+      padding: 0 9px 10px 9px;
+      margin-left: 2px;
+}
+
 .signinn-details{
-      height: 40px;
-      width: 113px;
-      padding: 0 9px 7px 9px;
-      margin-left: 1px;
-      display: grid;
-      justify-content: center;
-      align-items: center;
+      height: auto;
+      margin-top: 8px;
+
+      text-align: center;
+}
+
+.signinn-details p{
+      max-width: 7rem;
+      white-space: nowrap;
+      font-size: 13px;
+}
+
+
+/* nav-right 3rd box  */
+
+.order-return{
+      height: 50px;
+      max-width: 80px;
+      padding: 0 9px 10px 9px;
+      margin-left: 2px;
 }
 
 .ord-details{
-      height: 40px;
-      width: 58px;
-      padding: 0 9px 10px 9px;
-      margin-left: 1px;
+      height: auto;
+      max-width: 100%;
       display: grid;
       justify-content: center;
-      align-items: center;
+      align-content: center;
+}
+
+.ord-details p{
+      font-size: 13px;
+      margin-top: 8px;
+}
+
+/* nav-right 4th box  */
+.cart-orders{
+      height: 50px;
+      max-width: 66px;
+      padding: 0 9px 10px 9px;
+      margin: 0 11px 0 2px;
+
 }
 
 .cart-details{
-      height: 39px;
-      width: 66px;
-      padding: 0 9px 10px 9px;
-      margin: 0 11px 0 1px;
+      width: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center;
-}
 
+      
+}
 .cart-image{
       font-size: 19px;
       position: relative;
@@ -169,3 +237,4 @@
       position: relative;
       color: rgb(188, 127, 12);
 }
+
