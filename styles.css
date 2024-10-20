@@ -5,11 +5,6 @@
       width: 100%;
 }
 
-header{
-      display: flex;
-      flex-direction: row;
-}
-
 .nav{
       height: 60px;
       width: 100%;
@@ -21,18 +16,19 @@ header{
       align-items: center;
 
       position: fixed;
+      top: 0;
+      z-index: 5;
 }
 
 .logo{
       margin-left: 11px;
       max-width: 7rem;
-      height: auto;
+      height: 50px;
 }
 
 .img{
-     height: 50px; 
+     height: auto; 
      max-width: 7rem;
-     /* display: flex; */
 }
 
 .mobile-logo{
@@ -73,6 +69,7 @@ header{
 }
 .india{
       display: flex;
+      /* justify-content: end; */
 }
 
 .india i{
@@ -153,7 +150,7 @@ header{
 .nav-tools{
       width: 100%;
       display: flex;
-      justify-content:stretch;
+      justify-content:center;
       align-items: center; 
       padding-top: 3px;
       margin-top: 2px;
@@ -270,6 +267,7 @@ header{
       .cart-orders{
             margin-right: 10px;
       }
+
 }
 
 
@@ -282,8 +280,62 @@ header{
 
 /* navigation 2 */
 .nav2{
-      height: 80px;
-      background-color: rgb(7, 7, 67);
+      height: 39px;
+      color: white;
+      background-color: #364671;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      position: relative;
+      top: 60px;
+      & h3{
+            font-size:0.8rem ;
+      }
 }
 
+.nav2-left{
+      max-width: 3.65rem;
+      height: 39px;
 
+      & a{
+            padding: 8px 9px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+      }
+      & .fa-bars{
+            color: white;
+            height: 17px;
+            width: 14px;
+      }
+      & .bar-all{
+            max-width: 1.1rem;
+            height: 12px;
+            padding: 0 0 0 5px;
+            color: white;
+            font-weight: bolder;
+      }
+
+}
+ 
+.nav-xshop-container{
+
+      & .nav-xshop{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+      }
+  & h3{
+      font-size: 0.8rem;
+      max-width: fit-content;
+      padding: 8px 9px;
+      margin: 5px 0 6px 0;
+      text-align: center;
+}
+}
+
+.pageContent{
+      
+}
