@@ -209,6 +209,9 @@ body{
       max-width: 5rem;
       padding: 0 9px 10px 9px;
       margin-left: 2px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
 }
 
 .ord-details{
@@ -230,6 +233,9 @@ body{
       max-width: 4.1rem;
       padding: 0 9px 10px 9px;
       margin: 0 11px 0 2px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
 }
 
 .cart-details{
