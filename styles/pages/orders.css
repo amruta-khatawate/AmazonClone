@@ -89,7 +89,7 @@
       grid-template-columns: 110px 1fr 220px;
       column-gap: 35px;
       row-gap: 60px;
-      align-items: center;
+      /* align-items: end; */
 }     
 
 @media(max-width: 800px){
@@ -107,10 +107,11 @@
 }
 
 .product-image-container{
-      text-align: center;
+      text-align:center;
+      align-items: baseline;
 }
 
-.product-image-container img{
+.product-image{
       max-width: 110px;
       max-height: 110px;
 }
